@@ -51,7 +51,7 @@ public class MaxPriorityQueue<T> {
   
   // Helper function.
   private boolean less(int i, int j) {
-    return ((Comparable<T>) this.pq[i]).compareTo(((T) this.pq[j])) < 0;
+    return ((ComparableStudy<T>) this.pq[i]).compareTo(((T) this.pq[j])) < 0;
   }
 
   /**

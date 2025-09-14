@@ -5,10 +5,10 @@
  * the usual insert and delete the maximum operations.
  * It also supports methods for peeking at a maximum
  * key, checking if the priority queue is empty and
- * the number of elements in the queue.
+ * the number of elements in the queue.hi
  */
 
-public class PriorityQueueGeneric<T extends Comparable<T>> {
+public class PriorityQueueGeneric<T extends ComparableStudy<T>> {
   private T[] pq; // binary heap using 1-based indexing
   private int size;    // number of elements in the queue
 
@@ -18,7 +18,7 @@ public class PriorityQueueGeneric<T extends Comparable<T>> {
    * @param capacity - initial size of the queue.
    */
   public PriorityQueueGeneric(int capacity) {
-    this.pq = (T []) new Comparable[capacity + 1];
+    this.pq = (T []) new ComparableStudy[capacity + 1];
     this.size = 0;
   }
 
